@@ -23,7 +23,7 @@ class WebhookCall
 
     protected array $headers = [];
 
-    private array $payload = [];
+    private $payload = [];
 
     private $signWebhook = true;
 
@@ -59,7 +59,7 @@ class WebhookCall
         return $this;
     }
 
-    public function payload(array $payload): self
+    public function payload($payload): self
     {
         $this->payload = $payload;
 
